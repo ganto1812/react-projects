@@ -44,8 +44,8 @@ export default function About() {
 				className='img-fluid mx-auto mt-5 col-6 col-md-2'
 			></img>
 			<div className='intro'>
-				<div className='m-5'>
-					<div className='px-5 mb-5'>
+				<div className='my-5'>
+					<div className='col-10 mx-auto my-5'>
 						<p>Hi</p>
 						<p>
 							My name is Antonella and I'm a self-taught Front End Developer,
@@ -53,10 +53,10 @@ export default function About() {
 						</p>
 					</div>
 				</div>
-				<div>
-					<div className='p-5'>
+				<div className='row'>
+					<div className='col-10 mx-auto my-5'>
 						<h2>Some of the languages I use today include:</h2>
-						<div className='smallIcons d-flex flex-row flex-wrap'>
+						<div className='smallIcons d-flex flex-row row flex-wrap'>
 							<img
 								src={html}
 								alt='html'
@@ -89,7 +89,7 @@ export default function About() {
 							/>
 						</div>
 					</div>
-					<div className='p-5'>
+					<div className='col-10 mx-auto my-5'>
 						<h2>Libraries &amp; Frameworks:</h2>
 						<div className='smallIcons row'>
 							<img
@@ -124,7 +124,7 @@ export default function About() {
 							/>
 						</div>
 					</div>
-					<div className='p-5'>
+					<div className='col-10 mx-auto my-5'>
 						<h2>Designing software:</h2>
 						<div className='smallIcons row'>
 							<img
@@ -159,7 +159,7 @@ export default function About() {
 							/>
 						</div>
 					</div>
-					<div className='p-5'>
+					<div className='col-10 mx-auto my-5'>
 						<h2>Teamwork:</h2>
 						<div className='smallIcons row'>
 							<img

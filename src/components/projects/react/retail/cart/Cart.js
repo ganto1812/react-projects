@@ -5,7 +5,7 @@ import { ProductConsumer } from '../context';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
 
-export default function Cart() {
+export default function Cart(props) {
 	return (
 		<section className='text-white'>
 			<ProductConsumer>
@@ -17,7 +17,7 @@ export default function Cart() {
 								<h1 className='p-5'>Your Cart</h1>
 								<CartColumns></CartColumns>
 								<CartList value={value}></CartList>
-								<CartTotals value={value}></CartTotals>
+								<CartTotals value={value} history={props.history}></CartTotals>
 							</React.Fragment>
 						);
 					} else {

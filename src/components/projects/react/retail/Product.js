@@ -25,7 +25,8 @@ export default class Product extends Component {
 										className='img-fluid card-image-top'
 									/>
 								</Link>
-								<button
+								<Button
+									variant='success'
 									className='cart-btn'
 									disabled={inCart ? true : false}
 									onClick={() => {
@@ -41,7 +42,7 @@ export default class Product extends Component {
 									) : (
 										<span data-target='#ModalCenter'>+</span>
 									)}
-								</button>
+								</Button>
 								<ButtonToolbar>
 									<ModalRetail
 										show={value.modalOpen}

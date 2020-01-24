@@ -21,8 +21,8 @@ export default function CartItem({ item, value }) {
 				<span className='d-lg-none'>price : </span>£{price}
 			</div>
 			<div className='col-10 mx-auto col-lg-2 my-2 my-lg-0'>
-				<div className='d-flex justify-content-center'>
-					<div className='row align-items-center'>
+				<div className=''>
+					<div className='row mx-auto d-flex align-items-center justify-content-center'>
 						<Button
 							onClick={() => decrement(id)}
 							variant='outline-success'
@@ -30,7 +30,9 @@ export default function CartItem({ item, value }) {
 						>
 							-
 						</Button>
-						<span className='col-4'>{count}</span>
+						<div className='col-4'>
+							<span>{count}</span>
+						</div>
 						<Button
 							onClick={() => increment(id)}
 							variant='outline-success'
