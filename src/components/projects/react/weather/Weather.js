@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import weather from './Weather.png';
 
 export default function Weather() {
 	const [temperature, setTemperature] = useState('');
@@ -30,8 +31,7 @@ export default function Weather() {
 
 	return (
 		<div>
-			<h1>Testing!</h1>
-			<h1>Testing!</h1>
+			<img src={weather} alt='weather' className='mx-auto' />
 			<h1>Weather APP</h1>
 			<p>Find out weather temperature, conditions and more..</p>
 			<form onSubmit={getWeather}>

@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Contact from '../components/sections/Contact';
-import Weather from '../components/projects/react/Weather';
+import Weather from '../components/projects/react/weather/Weather';
 import Retail from '../components/projects/react/retail/Retail';
 import Todolist from '../components/projects/react/todolist/Todolist';
 import Footer from '../components/Footer';
