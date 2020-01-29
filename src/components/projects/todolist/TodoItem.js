@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'react-bootstrap';
 
 export default class TodoItem extends Component {
 	render() {
@@ -19,14 +20,16 @@ export default class TodoItem extends Component {
 					<input
 						type='checkbox'
 						onChange={this.props.markComplete.bind(this, id)}
+						checked={completed}
 					/>{' '}
 					{title}
-					<button
+					<Button
 						onClick={this.props.delTodo.bind(this, id)}
-						className='ml-4 btn btn-danger rounded-circle'
+						className='ml-4'
+						variant='outline-danger'
 					>
 						x
-					</button>
+					</Button>
 				</p>
 			</div>
 		);
