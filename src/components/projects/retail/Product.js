@@ -18,15 +18,15 @@ export default class Product extends Component {
 								className='img-container'
 								onClick={() => value.handleDetail(id)}
 							>
-								<Link to='/projects/react/2/details'>
+								<Link to='/projects/2/details'>
 									<img
-										src={'/images/projects/react/retail/' + img}
+										src={'/images/projects/retail/' + img}
 										alt='product'
 										className='img-fluid card-image-top'
 									/>
 								</Link>
 								<Button
-									variant='success'
+									variant='outline-success'
 									className='cart-btn'
 									disabled={inCart ? true : false}
 									onClick={() => {
