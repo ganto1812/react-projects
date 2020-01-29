@@ -1,7 +1,3 @@
-.appContainer {
-	margin: 5em 30%;
-	background-color: black;
-}
 .title {
 	background: #00423d;
 	color: #fff;
@@ -9,8 +5,8 @@
 	padding: 3px;
 }
 .todoItem {
-	background: #f4f4f4;
+	background: #eeeeee;
 	padding: 0.5em;
 	margin: 0 auto;
-	border-bottom: 1px #ccc dotted;
+	border-bottom: 1px rgb(102, 102, 102) dotted;
 }
