@@ -11,7 +11,6 @@ export default function MyNav() {
 			className='navbar fixed-top navbar-expand-lg navbar-dark p-0'
 			id='navbar'
 		>
-			<Navbar.Brand className='navbar-brand px-3'>Menu</Navbar.Brand>
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 			<Navbar.Collapse id='responsive-navbar-nav'>
 				<Nav className='mr-auto'>
