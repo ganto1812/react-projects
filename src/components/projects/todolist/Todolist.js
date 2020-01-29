@@ -11,7 +11,7 @@ export default class Todolist extends Component {
 
 	componentDidMount() {
 		axios
-			.get('https://jsonplaceholder.typicode.com/todos/?_limit=10')
+			.get('https://jsonplaceholder.typicode.com/todos/?_limit=6')
 			.then(res => this.setState({ todos: res.data }));
 	}
 
