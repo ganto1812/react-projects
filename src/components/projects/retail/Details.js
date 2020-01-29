@@ -50,12 +50,12 @@ export default function Details() {
 								<p className='text-muted lead'>{info}</p>
 								{/* buttons */}
 								<div>
-									<Link to='/projects/react/2'>
+									<Link to='/projects/2'>
 										<button className='btn btn-outline-primary mr-2'>
 											Back To Products
 										</button>
 									</Link>
-									<Link to='/projects/react/2/cart'>
+									<Link to='/projects/2/cart'>
 										<button
 											className='btn btn-outline-success'
 											disabled={inCart ? true : false}

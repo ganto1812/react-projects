@@ -19,14 +19,14 @@ export default function Retail() {
 						<Switch>
 							<Route
 								exact
-								path='/projects/react/2'
+								path='/projects/2'
 								component={ProductList}
 							></Route>
 							<Route
-								path='/projects/react/2/details'
+								path='/projects/2/details'
 								component={Details}
 							></Route>
-							<Route path='/projects/react/2/cart' component={Cart}></Route>
+							<Route path='/projects/2/cart' component={Cart}></Route>
 							<Route component={Default}></Route>
 						</Switch>
 						<ModalRetail></ModalRetail>

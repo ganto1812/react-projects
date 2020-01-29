@@ -28,7 +28,7 @@ export default function ModalRetail(props) {
 									<i className='fa fa-thumbs-o-up' aria-hidden='true'></i>
 								</Alert>
 								<img
-									src={'/images/projects/react/retail/' + img}
+									src={'/images/projects/retail/' + img}
 									alt='product'
 									className='img-fluid'
 								/>
@@ -36,7 +36,7 @@ export default function ModalRetail(props) {
 								<p className='text-muted'>Price : £{price}</p>
 							</Modal.Body>
 							<Modal.Footer>
-								<Link to='/projects/react/2'>
+								<Link to='/projects/2'>
 									<Button
 										onClick={() => closeModal()}
 										className='mr-3'
@@ -45,7 +45,7 @@ export default function ModalRetail(props) {
 										Continue shopping
 									</Button>
 								</Link>
-								<Link to='/projects/react/2/cart'>
+								<Link to='/projects/2/cart'>
 									<Button onClick={() => closeModal()} variant='outline-info'>
 										Go to cart
 									</Button>

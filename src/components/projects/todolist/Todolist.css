@@ -1,0 +1,19 @@
+.appContainer {
+  margin: 5em 30%;
+  background-color: black;
+}
+
+.title {
+  background: #00423d;
+  color: #fff;
+  margin: 0;
+  padding: 3px;
+}
+
+.todoItem {
+  background: #f4f4f4;
+  padding: 0.5em;
+  margin: 0 auto;
+  border-bottom: 1px #ccc dotted;
+}
+/*# sourceMappingURL=Todolist.css.map */
