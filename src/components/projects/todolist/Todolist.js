@@ -48,7 +48,7 @@ export default class Todolist extends Component {
 
 	render() {
 		return (
-			<div className='appContainer'>
+			<div className='col-xl-3 col-md-5 mx-auto p-0 bg-dark mt-5'>
 				<h1 className='title'>To do list!</h1>
 				<AddTodo addTodo={this.addTodo}></AddTodo>
 				<Todos
