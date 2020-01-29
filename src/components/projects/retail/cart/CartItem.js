@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function CartItem({ item, value }) {
 	const { id, title, img, price, total, count } = item;
@@ -8,7 +10,7 @@ export default function CartItem({ item, value }) {
 		<div className='row my-1 text-capitalize text-center align-items-center'>
 			<div className='col-10 mx-auto col-lg-2'>
 				<img
-					src={'/images/projects/react/retail/' + img}
+					src={'/images/projects/retail/' + img}
 					alt='product'
 					className='img-fluid'
 				/>
@@ -44,8 +46,8 @@ export default function CartItem({ item, value }) {
 				</div>
 			</div>
 			<div className='col-10 mx-auto col-lg-2'>
-				<Button onClick={() => removeItem(id)}>
-					<i className='fa fa-trash-o' aria-hidden='true'></i>
+				<Button onClick={() => removeItem(id)} variant='outline-danger'>
+					<FontAwesomeIcon icon={faTrashAlt}></FontAwesomeIcon>
 				</Button>
 			</div>
 			<div className='col-10 mx-auto col-lg-2'>
