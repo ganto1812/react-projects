@@ -24,7 +24,7 @@ export default class AddTodo extends Component {
 					value={this.state.title}
 					onChange={this.onChange}
 				/>
-				<input type='submit' value='submit' className='btn btn-secondary' />
+				<input type='submit' value='Add' className='btn btn-secondary' />
 			</form>
 		);
 	}
