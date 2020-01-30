@@ -6,7 +6,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 export default function StoreNavbar() {
 	return (
-		<Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+		<Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
 			<Navbar.Brand className='navbar-brand'>WELCOME TO MY STORE</Navbar.Brand>
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 			<Navbar.Collapse id='responsive-navbar-nav'>
