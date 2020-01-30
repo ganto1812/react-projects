@@ -43,7 +43,10 @@ export default class Todolist extends Component {
 				title,
 				completed: false
 			})
-			.then(res => this.setState({ todos: [...this.state.todos, res.data] }));
+			.then(res => {
+				res.data.id = this.state.todos.length + 1;
+				this.setState({ todos: [...this.state.todos, res.data] });
+			});
 	};
 
 	render() {
