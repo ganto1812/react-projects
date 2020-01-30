@@ -25,10 +25,8 @@ export default function Weather() {
 		document.getElementById('getWeather').reset();
 
 		if (!city && !country) {
-			{
-				setAlertText('Oh no! Type in something');
-				setShowAlert(true);
-			}
+			setAlertText('Oh no! Type in something');
+			setShowAlert(true);
 		} else {
 			setShowAlert(false);
 			try {
