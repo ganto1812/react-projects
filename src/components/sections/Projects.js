@@ -22,7 +22,7 @@ export default function Projects() {
 			id: 3,
 			title: 'To do App',
 			info:
-				'An app that lets you add anything to do the list. With get and fetch real time actions from an API',
+				'An app that lets you add anything to do the list with get and fetch actions.',
 			img: 'todo.png'
 		}
 	];
@@ -32,13 +32,13 @@ export default function Projects() {
 			<p>Here are some of my projects.</p>
 			<p>Take a look!</p>
 			<div className='my-5'>
-				<h2>React Projects</h2>
+				<h2 className='my-5'>React Projects</h2>
 				<div className='row'>
 					<Card projects={projects}></Card>
 				</div>
 			</div>
 			<div className='my-5'>
-				<h2>Vanilla JS Projects</h2>
+				<h2 className='my-5'>Vanilla JS Projects</h2>
 				<p>Currently stored on a different website</p>
 				<a href='https://www.antonellapisani.website/'>
 					https://www.antonellapisani.website/
