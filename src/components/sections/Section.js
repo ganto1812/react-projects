@@ -1,5 +1,5 @@
 import React from 'react';
-import spadeOnly from '../../images/others/spadeonly.svg';
+import spadeOnly from './spadeonly.svg';
 // import About from './About';
 
 export default function Section({ sectionName }) {
