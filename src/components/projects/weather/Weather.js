@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import weather from './Weather.png';
 import { Alert, Button } from 'react-bootstrap';
+const axios = require('axios');
 
 export default function Weather() {
 	const [temperature, setTemperature] = useState('');
@@ -15,8 +16,7 @@ export default function Weather() {
 	const [showAlert, setShowAlert] = useState(false);
 	const [alertText, setAlertText] = useState('');
 
-	// TODO: Remove API!
-	const API_KEY = '5e24ee893ffee0be84871d9545bb6d57';
+	const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API;
 
 	const getWeather = async e => {
 		e.preventDefault();
@@ -29,14 +29,14 @@ export default function Weather() {
 			setShowAlert(true);
 		} else {
 			setShowAlert(false);
-			try {
-				const api_call = await fetch(
+			axios
+				.get(
 					`https://api.openweathermap.org/data/2.5/weather?q=${city}${city &&
 						country &&
-						','}${country}&units=metric&appid=${API_KEY}`
-				);
-				if (api_call.ok) {
-					const data = await api_call.json();
+						','}${country}&units=metric&appid=${WEATHER_API_KEY}`
+				)
+				.then(response => {
+					const data = response.data;
 					setTemperature(data.main.temp);
 					setCity(data.name);
 					setCountry(data.sys.country);
@@ -46,16 +46,14 @@ export default function Weather() {
 					setMinTemp(data.main.temp_min);
 					setMaxTemp(data.main.temp_max);
 					setError('');
-				} else {
-					const data = await api_call.json();
-					console.log('data:' + data);
-					setAlertText(data.message);
+					console.log(response.data.url);
+					console.log(response.data.explanation);
+				})
+				.catch(err => {
+					setAlertText('Something went wrong. Try again later');
 					setShowAlert(true);
-				}
-			} catch (err) {
-				setAlertText('Something went wrong. Try again later');
-				setShowAlert(true);
-			}
+					console.log(err);
+				});
 		}
 	};
 
@@ -88,10 +86,7 @@ export default function Weather() {
 				<h1 className='my-5 pb-5'>
 					{city}, {country}
 				</h1>
-				<div
-					className='row col-10 mx-auto mb-5'
-					style={{ fontFamily: 'Arial' }}
-				>
+				<div className='row col-10 mx-auto mb-5'>
 					<div className='col-12 mx-auto col-sm-4'>
 						<h2 className='btn-info p-3 container-fluid'>Temperature:</h2>
 						<p>{temperature}C</p>
