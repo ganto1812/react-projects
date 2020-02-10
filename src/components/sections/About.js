@@ -31,7 +31,6 @@ export default function About() {
 					</p>
 					<div className='row'>
 						{about.map(subSection => {
-							console.log(subSection);
 							return (
 								<div className='col-10 col-md-8 mx-auto my-5'>
 									<h2>{subSection.info}</h2>
