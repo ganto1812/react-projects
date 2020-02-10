@@ -12,7 +12,11 @@ export default function Header() {
 					alt='Antonella Pisani'
 					className='name img-fluid p-5 mt-5'
 				/>
-				<img src={logo} alt='spade logo' className='logo img-fluid px-5' />
+				<img
+					src={logo}
+					alt='spade logo'
+					className='logo img-fluid px-5 mx-auto'
+				/>
 			</div>
 		</header>
 	);
