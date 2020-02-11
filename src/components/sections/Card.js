@@ -14,7 +14,10 @@ export default function Card(props) {
 							alt='Project'
 						/>
 					</div>
-					<div className='flip-card-back'>
+					<div
+						className='flip-card-back'
+						style={{ background: project.colour }}
+					>
 						<h3 className='card-title py-3'>{project.title}</h3>
 						<p className='info p-4'>{project.info}</p>
 					</div>

@@ -16,6 +16,7 @@ $colours: (
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -103,10 +104,9 @@ p {
 	background-color: aliceblue;
 }
 
-.introIm,
-.libraryIm {
-	height: 100px;
-	margin: 10px 0;
+.cloud-box {
+	background: #ffffff94;
+	border-radius: 50%;
 }
 
 em {
@@ -173,9 +173,8 @@ img {
 .flip-card-back {
 	color: white;
 	transform: rotateY(180deg);
-	background: #579801;
 	.card-title {
-		background: #005006;
+		background: #0000007e;
 	}
 	.info {
 		font-size: 1em;

@@ -16,16 +16,16 @@ export default function About() {
 			></img>
 			<div className='intro'>
 				<div className='my-5'>
-					<div className='col-8 col-sm-4 mx-auto my-5'>
+					<div className='col-8 col-sm-4 mx-auto my-5 cloud-box'>
 						<p>Hi</p>
 						<p>
-							My name is Antonella and I'm a self-taught Front End Developer,
+							My name is Ana and I'm a self-taught Front End Developer,
 							currently working to become a Full Stack Developer.
 						</p>
 					</div>
 				</div>
 				<div>
-					<p>
+					<p className='cloud-box'>
 						Here are some of the languages, libraries and softwares that I use
 						today.
 					</p>
