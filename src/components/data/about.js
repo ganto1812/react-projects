@@ -5,8 +5,7 @@ export const about = [
 			{ src: 'languages/html.svg', title: 'HTML' },
 			{ src: 'languages/css.svg', title: 'CSS' },
 			{ src: 'languages/js.svg', title: 'JavaScript' },
-			{ src: 'languages/cSharp.svg', title: 'C#' },
-			{ src: 'languages/sql-server.png', title: 'SQL' }
+			{ src: 'languages/cSharp.svg', title: 'C#' }
 		]
 	},
 	{
