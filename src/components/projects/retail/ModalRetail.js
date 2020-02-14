@@ -35,20 +35,21 @@ export default function ModalRetail(props) {
 								<p>{title}</p>
 								<p className='text-muted'>Price : £{price}</p>
 							</Modal.Body>
-							<Modal.Footer>
-								<Link to='/projects/2'>
-									<Button
-										onClick={() => closeModal()}
-										className='mr-3'
-										variant='outline-success'
-									>
-										Continue shopping
-									</Button>
+							<Modal.Footer className='flex'>
+								<Link
+									to='/projects/2'
+									onClick={() => closeModal()}
+									className='mx-auto btn btn-outline-success'
+									variant=''
+								>
+									Continue shopping
 								</Link>
-								<Link to='/projects/2/cart'>
-									<Button onClick={() => closeModal()} variant='outline-info'>
-										Go to cart
-									</Button>
+								<Link
+									to='/projects/2/cart'
+									onClick={() => closeModal()}
+									className='mx-auto btn btn-outline-info'
+								>
+									Go to cart
 								</Link>
 							</Modal.Footer>
 						</Modal>
