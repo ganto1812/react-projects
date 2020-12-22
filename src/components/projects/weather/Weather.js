@@ -16,8 +16,6 @@ export default function Weather() {
 	const [showAlert, setShowAlert] = useState(false);
 	const [alertText, setAlertText] = useState('');
 
-	const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API;
-
 	const getWeather = async e => {
 		e.preventDefault();
 		const city = e.target.elements.city.value;
@@ -33,7 +31,7 @@ export default function Weather() {
 				.get(
 					`https://api.openweathermap.org/data/2.5/weather?q=${city}${city &&
 						country &&
-						','}${country}&units=metric&appid=${WEATHER_API_KEY}`
+						','}${country}&units=metric&appid=${process.env.REACT_APP_WEATHER_API}`
 				)
 				.then(response => {
 					const data = response.data;
