@@ -5,7 +5,7 @@ export default class MyApp extends React.Component {
 	render() {
 		const onSuccess = payment => {
 			// Congratulation, it came here means everything's fine!
-			console.log('The payment was succeeded!', payment);
+			console.log('The payment was successful!', payment);
 			this.props.clearCart();
 			this.props.history.push('/projects/2');
 			// You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
@@ -31,7 +31,7 @@ export default class MyApp extends React.Component {
 
 		const client = {
 			sandbox: process.env.REACT_APP_RETAIL_APP_ID,
-			production: 'YOUR-PRODUCTION-APP-ID'
+			production: process.env.REACT_APP_RETAIL_APP_ID
 		};
 		// In order to get production's app-ID, you will have to send your app to Paypal for approval first
 		// For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"):
