@@ -33,6 +33,8 @@ export default class MyApp extends React.Component {
 			sandbox: process.env.REACT_APP_RETAIL_APP_ID,
 			production: process.env.REACT_APP_RETAIL_APP_ID
 		};
+		const client_id =
+   		process.env.REACT_APP_RETAIL_APP_ID_CLIENT;
 		// In order to get production's app-ID, you will have to send your app to Paypal for approval first
 		// For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"):
 		//   => https://developer.paypal.com/docs/classic/lifecycle/sb_credentials/
@@ -44,6 +46,7 @@ export default class MyApp extends React.Component {
 			<PaypalExpressBtn
 				env={env}
 				client={client}
+				client_id={client_id}
 				currency={currency}
 				total={this.props.total}
 				onError={onError}
