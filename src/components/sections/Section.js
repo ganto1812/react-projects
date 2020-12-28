@@ -4,7 +4,7 @@ import spadeOnly from './spadeonly.svg';
 
 export default function Section({ sectionName }) {
 	return (
-		<div className='section mt-5'>
+		<div className='section'>
 			<img
 				src={spadeOnly}
 				id='sectionSpade1'

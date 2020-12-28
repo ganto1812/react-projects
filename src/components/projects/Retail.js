@@ -60,28 +60,6 @@ const loopTrough = list => {
 };
 loopTrough(list);
 
-const iLike = list.map(thing => {
-	return 'I like ' + thing;
-});
-
-function Person(name, age, hairColour) {
-	this.name = name;
-	this.age = age;
-	this.hairColour = hairColour;
-}
-
-const Anto = new Person('Anto', 28, 'Brown');
-console.log(Anto);
-
-Person.prototype.sayName = function() {
-	console.log(`My name is ${this.name}!`);
-};
-
-Anto.sayName();
-
-// console.log(windowReturn);
-// windowReturn.createTextNode(iLike);
-
 class ShoppingList {
 	constructor(items, number) {
 		this.items = items;

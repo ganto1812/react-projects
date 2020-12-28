@@ -32,27 +32,12 @@ export default function Projects() {
 	return (
 		<div>
 			<Section sectionName='My Projects' sectionId='projects' key='2'></Section>
-			<p>Here are some of my projects.</p>
-			<p>Take a look!</p>
+			<p>React projects</p>
 			<div className='my-5'>
 				<h2 className='my-5'>React Projects</h2>
 				<div className='row'>
 					<Card projects={projects}></Card>
 				</div>
-			</div>
-			<div className='my-5'>
-				<h2 className='my-5'>Vanilla JS Projects</h2>
-				<p>Currently stored on a different website</p>
-				<a href='https://www.antonellapisani.website/'>
-					https://www.antonellapisani.website/
-				</a>
-				<a href='https://www.antonellapisani.website/#projects'>
-					<img
-						src='/images/projects/vanillajs-collage.png'
-						alt='Vanilla JS'
-						className='img-fluid col-8 mx-auto'
-					/>
-				</a>
 			</div>
 		</div>
 	);
