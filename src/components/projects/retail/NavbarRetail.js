@@ -12,12 +12,12 @@ export default function StoreNavbar() {
 			<Navbar.Collapse id='responsive-navbar-nav'>
 				<Nav className='mr-auto'>
 					<Button className='nav-item' variant='outline-secondary'>
-						<Link to='/projects/2' className='nav-link'>
+						<Link to='/project2' className='nav-link'>
 							Products
 						</Link>
 					</Button>
 					<Button className='nav-item' variant='outline-secondary'>
-						<Link className='nav-link' to='/projects/2/cart'>
+						<Link className='nav-link' to='/project2/cart'>
 							<FontAwesomeIcon
 								icon={faShoppingCart}
 								color='#fff'

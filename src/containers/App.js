@@ -27,10 +27,9 @@ function App() {
 			<Router>
 				<div>
 					<Route path='/' exact component={Projects}></Route>
-					<Route path='/projects' exact component={Projects}></Route>
-					<Route path='/projects/1' component={Weather}></Route>
-					<Route path='/projects/2' component={Retail}></Route>
-					<Route path='/projects/3' component={Todolist}></Route>
+					<Route path='/project1/' component={Weather}></Route>
+					<Route path='/project2/' component={Retail}></Route>
+					<Route path='/project3/' component={Todolist}></Route>
 				</div>
 			</Router>
 			<Footer></Footer>

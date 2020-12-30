@@ -28,7 +28,7 @@ export default function Details() {
 						<div className='row'>
 							<div className='col-10 mx-auto col-md-6 my-3 text-capitalize'>
 								<img
-									src={'/images/projects/retail/' + img}
+									src={'/images/project/retail/' + img}
 									alt='product'
 									className='img-fluid'
 								/>
@@ -50,12 +50,12 @@ export default function Details() {
 								<p className='text-muted lead'>{info}</p>
 								{/* buttons */}
 								<div>
-									<Link to='/projects/2'>
+									<Link to='/project2'>
 										<button className='btn btn-outline-primary mr-2'>
 											Back To Products
 										</button>
 									</Link>
-									<Link to='/projects/2/cart'>
+									<Link to='/project2/cart'>
 										<button
 											className='btn btn-outline-success'
 											disabled={inCart ? true : false}

@@ -14,7 +14,7 @@ export default function CartTotals({ value, history }) {
 						className='col-10 mt-2 mb-5 ml-sm-5 ml-md-auto col-sm-8 text-capitalize
 						text-right'
 					>
-						<Link to='/projects/2'>
+						<Link to='/project2'>
 							<Button onClick={() => clearCart()} variant='outline-danger'>
 								Clear Cart
 							</Button>

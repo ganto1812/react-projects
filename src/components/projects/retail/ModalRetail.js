@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProductConsumer } from './context';
 import { Link } from 'react-router-dom';
-import { Modal, Button, Alert } from 'react-bootstrap';
+import { Modal, Alert } from 'react-bootstrap';
 
 export default function ModalRetail(props) {
 	return (
@@ -37,7 +37,7 @@ export default function ModalRetail(props) {
 							</Modal.Body>
 							<Modal.Footer className='flex'>
 								<Link
-									to='/projects/2'
+									to='/project2'
 									onClick={() => closeModal()}
 									className='mx-auto btn btn-outline-success'
 									variant=''
@@ -45,7 +45,7 @@ export default function ModalRetail(props) {
 									Continue shopping
 								</Link>
 								<Link
-									to='/projects/2/cart'
+									to='/project2/cart'
 									onClick={() => closeModal()}
 									className='mx-auto btn btn-outline-info'
 								>

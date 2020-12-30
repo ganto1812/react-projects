@@ -5,7 +5,7 @@ export default function Card(props) {
 	const { id, title, info, img } = props.projects;
 	return props.projects.map(project => (
 		<div className='flip-card mx-auto' key={project.id}>
-			<Link to={'/projects/' + project.id}>
+			<Link to={'/project' + project.id}>
 				<div className='flip-card-inner'>
 					<div className='flip-card-front'>
 						<img
