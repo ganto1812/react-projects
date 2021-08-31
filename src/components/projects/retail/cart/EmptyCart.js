@@ -3,7 +3,7 @@ import emptycart from './emptycart.png';
 
 export default function EmptyCart() {
 	return (
-		<div className='container mt-5'>
+		<div className='container'>
 			<div className='row'>
 				<div className='col-10 mx-auto text-center'>
 					<h1 className='text-capitalize'>oh no!</h1>

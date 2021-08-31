@@ -11,7 +11,7 @@ import './retail.scss';
 
 export default function Retail() {
 	return (
-		<div className='container p-0 mt-5'>
+		<div className='container p-0'>
 			<ProductProvider>
 				<Router>
 					<StoreNavbar></StoreNavbar>

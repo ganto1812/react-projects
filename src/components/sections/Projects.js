@@ -27,7 +27,15 @@ export default function Projects() {
 				'An app that lets you add anything to do the list with get and fetch actions.',
 			img: 'todo.png',
 			colour: '#0490b3'
-		}
+		},
+		{
+			id: 4,
+			title: 'The Blog',
+			info:
+				'A blog for all your troubles.',
+			img: 'todo.png',
+			colour: '#3390b3'
+		},
 	];
 	return (
 		<div>

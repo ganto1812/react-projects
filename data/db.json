@@ -1,0 +1,20 @@
+{"blogs": [
+    {
+        "title": "First Title",
+        "body": "This is the first article",
+        "author": "John Smith",
+        "id": 1
+      },
+      {
+        "title": "Second Title",
+        "body": "This is the second article",
+        "author": "Laura Bristol",
+        "id": 2
+      },
+      {
+        "title": "Third Title",
+        "body": "This is the third article",
+        "author": "Mary April",
+        "id": 3
+      }
+]}
