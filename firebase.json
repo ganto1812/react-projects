@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ana-portfolio-react",
     "public": "public",
     "ignore": [
       "firebase.json",
