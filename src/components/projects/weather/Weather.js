@@ -31,7 +31,7 @@ export default function Weather() {
 				.get(
 					`https://api.openweathermap.org/data/2.5/weather?q=${city}${city &&
 						country &&
-						','}${country}&units=metric&appid=${process.env.REACT_APP_WEATHER_API}`
+						','}${country}&units=metric&appid=5e24ee893ffee0be84871d9545bb6d57						`
 				)
 				.then(response => {
 					const data = response.data;

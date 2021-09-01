@@ -8,12 +8,14 @@ export default class MyApp extends React.Component {
 			console.log('The payment was successful!', payment);
 			this.props.clearCart();
 			this.props.history.push('/project2');
+			window.alert('Payment Successful');
 			// You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
 		};
 
 		const onCancel = data => {
 			// User pressed "cancel" or close Paypal's popup!
 			console.log('The payment was cancelled!', data);
+			window.alert('The payment was canceled');
 			// You can bind the "data" object's value to your state or props or whatever here, please see below for sample returned data
 		};
 
@@ -30,8 +32,8 @@ export default class MyApp extends React.Component {
 		// Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
 
 		const client = {
-			sandbox: process.env.REACT_APP_RETAIL_APP_ID,
-			production: 'YOUR-PRODUCTION-APP-ID'
+			sandbox: 'AQ4DKnMuL3_8KxhivAvu6keOxie7SyzDL3uP8TFrEEUeHWCEicasDOmil3Se5TA8thLyJjUbiDzNg3j4',
+			production: 'AQ4DKnMuL3_8KxhivAvu6keOxie7SyzDL3uP8TFrEEUeHWCEicasDOmil3Se5TA8thLyJjUbiDzNg3j4'
 		};
 		// In order to get production's app-ID, you will have to send your app to Paypal for approval first
 		// For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"):
