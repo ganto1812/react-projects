@@ -5,7 +5,7 @@ import spadeOnly from './spadeonly.svg';
 export default function Section({ sectionName }) {
 	return (
 		<div className='section'>
-			<a href="https://ana-portfolio-2021.netlify.app">
+			<a href="https://ana-portfolio.web.app/">
 			<img src="/images/about/name.svg" alt="icon" className="text-center d-inline my-3" width="200"/>
 			</a>
 			<img
