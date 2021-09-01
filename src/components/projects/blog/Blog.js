@@ -7,7 +7,7 @@ import { Router, Route } from 'react-router';
 const Blog = () => {
     
     return (
-        <div className="Blog">
+        <div className="blog">
             <Navbar></Navbar>
             <div className="content">
                 <Route exact path='/' component={Home}></Route>

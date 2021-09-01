@@ -28,19 +28,19 @@ export default function Projects() {
 			img: 'todo.png',
 			colour: '#0490b3'
 		},
-		{
-			id: 4,
-			title: 'The Blog',
-			info:
-				'A blog for all your troubles.',
-			img: 'todo.png',
-			colour: '#3390b3'
-		},
+		// {
+		// 	id: 4,
+		// 	title: 'The Blog',
+		// 	info:
+		// 		'A blog for all your troubles.',
+		// 	img: 'todo.png',
+		// 	colour: '#3390b3'
+		// },
 	];
 	return (
 		<div>
 			<Section sectionName='My Projects' sectionId='projects' key='2'></Section>
-			<p>React projects</p>
+			<p>React projects from 2019</p>
 			<div className='my-5'>
 				<h2 className='my-5'>React Projects</h2>
 				<div className='row'>
