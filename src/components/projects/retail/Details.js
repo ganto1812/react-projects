@@ -28,7 +28,7 @@ export default function Details() {
 						<div className='row'>
 							<div className='col-10 mx-auto col-md-6 my-3 text-capitalize'>
 								<img
-									src={'/images/project/retail/' + img}
+									src={'/images/projects/retail/' + img}
 									alt='product'
 									className='img-fluid'
 								/>
